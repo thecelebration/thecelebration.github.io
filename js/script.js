@@ -45,7 +45,7 @@ $(window).load(function() {
   var urlName = userName
   var showName = userName.replace("-"," ")
   $(".user-name span").text(showName) 
-  $(".share a").attr("href","whatsapp://send?text=thecelebration.github.io/newYear/page-1.html?name="+urlName+"")
+  $(".share a").attr("href","whatsapp://send?text=https://thecelebration.github.io/newYear/page-1.html?name="+urlName+"")
   console.log(userName)
   console.log(urlName)
   console.log(showName)
