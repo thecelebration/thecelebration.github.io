@@ -42,14 +42,18 @@ $(window).load(function() {
   $('.page-body').css("height", $(window).height()-115)
   $('.bg').css("height", $(window).height()-115)
   userName = window.location.href.split("name=")[1];
-  $(".user-name").text(userName.replace("%20"," ")) 
-  $(".share a").attr("href","whatsapp://send?text=thecelebration.github.io/newYear/page-1.html?name="+userName+"")
+  var urlName = userName
+  var showName = userName.replace("-"," ")
+  $(".user-name span").text(showName) 
+  $(".share a").attr("href","whatsapp://send?text=thecelebration.github.io/newYear/page-1.html?name="+urlName+"")
+  console.log(userName)
+  console.log(urlName)
+  console.log(showName)
 });
 
 $(document).on("click","#nameSubmit",function(){
-  var newUserName = $("#userName").val()
+  var newUserName = $("#userName").val().replace(" ","-")
   window.location.href = "page-1.html?name="+newUserName+""
-  console.log(newUserName)
 })
 
 // popup js
