@@ -55,7 +55,8 @@ body{
   float: right;
 }
 .page-ads{
-
+  max-height: 150px;
+  padding: 10px;
 }
 .text-1{
   color: #04edf9;
