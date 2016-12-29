@@ -51,6 +51,40 @@ body{
   color: #eaeaea;
   font-weight: bold;
 }
+.create-div{
+  background-color: #4fada7;
+  margin: 16px;
+  border-radius: 5px;
+}
+.create-new{
+  padding: 10px;
+}
+.create-new input{
+  width: 96%;
+  height: 30px;
+}
+.create-new button{
+  background-color: #4d728c;
+  border: 0 none;
+  border-radius: 5px;
+  color: #fff;
+  height: 35px;
+  margin: 20px 0;
+  width: 100px;
+  cursor: pointer;
+}
+.view-more{
+  background-color: #4d728c;
+  height: 35px;
+  text-align: center;
+  padding: 15px 0 0;
+  color: #fff;
+  border-radius: 0px 0px 5px 5px;
+  cursor: pointer;
+}
+.text-center{
+  text-align: center;
+}
 .pull-right{
   float: right;
 }
@@ -85,12 +119,12 @@ body{
 }
 .text-4{
   color: #200028;
-    font-size: 40px;
-    font-weight: bold;
-    text-align: center;
-    text-transform:capitalize;
-    text-shadow: 2px 2px 7px #ef0294;;
-    margin: 10px auto;
+  font-size: 40px;
+  font-weight: bold;
+  text-align: center;
+  text-transform:capitalize;
+  text-shadow: 2px 2px 7px #ef0294;;
+  margin: 10px auto;
 }
 .pagefooter{
   bottom: 0;
