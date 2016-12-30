@@ -185,7 +185,7 @@ body{
   padding: 0 10px;
   width: 85%;
 }
-.form-buy #nameSubmit{
+.form-buy #nameSubmit, #nameSubmitTop{
   background-color: #4d728c;
   border: 0 none;
   border-radius: 5px;
