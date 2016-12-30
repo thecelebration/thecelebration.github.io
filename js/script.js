@@ -55,6 +55,10 @@ $(document).on("click","#nameSubmit",function(){
   var newUserName = $("#userName").val().replace(" ","-")
   window.location.href = "page-1.html?name="+newUserName+""
 })
+$(document).on("click","#nameSubmitTop",function(){
+  var newUserName = $("#userNameTop").val().replace(" ","-")
+  window.location.href = "page-1.html?name="+newUserName+""
+})
 
 // popup js
 jQuery(document).ready(function($){
