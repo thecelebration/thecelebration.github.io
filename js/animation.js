@@ -25,12 +25,13 @@ var boddie;
 window.onload=function() { if (document.getElementById) {
   var i;
   boddie=document.createElement("div");
-  boddie.style.position="fixed";
-  boddie.style.top="0px";
-  boddie.style.left="0px";
+  // boddie.style.position="fixed";
+  // boddie.style.top="0px";
+  // boddie.style.left="0px";
   boddie.style.overflow="visible";
   boddie.style.width="1px";
   boddie.style.height="1px";
+  boddie.style.margin= "auto"
   boddie.style.backgroundColor="transparent";
   document.getElementById("page-body").appendChild(boddie);
   set_width();
@@ -134,4 +135,5 @@ function set_width() {
   }
   swide=sw_min;
   shigh=sh_min;
+  console.log(swide)
 }
