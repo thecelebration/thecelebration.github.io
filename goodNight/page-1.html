@@ -59,6 +59,13 @@
     text-transform: capitalize;
     font-family: 'Lobster', cursive;
 }
+.qut-bg p {
+    color: #fff;
+    font-size: 16px;
+    line-height: 20px;
+    text-shadow: 0 1px 3px #000;
+    padding: 5PX 15PX;
+}
 </style>
 <div class="container-mob">
   <div class="page-top-bar create-tab">
@@ -86,9 +93,9 @@
       <p class="col-3">Good Night</p>
       <p class="col-3">&</p>
       <p class="col-3">Sweet Dreams</p>
-      <div class="qut">
+      <div class="qut-bg" style="margin-top: 100px">
         <p>
-          Here is a wishing that the coming year is a glorious one. That rewards all your future endeavors with success.
+          Never let the <strong>Darkness</strong> or negativity outside affect your <strong>Inner Self</strong>. Just wait until <strong>Morning</strong> comes and the bright light will drown out the <strong>Darkness</strong>. Today has been difficult, but tommorow will be <strong>Another Day</strong>.
         </p>
         <span class="pull-right user-name">- <span></span></span>
       </div>
@@ -197,7 +204,7 @@
 $(window).load(function() {
   // $('page-body2').css("height", $(window).height()-115)
   $('.bg').css("height", $(window).height()-115)
-  $('.qut').css("margin-top", $(window).height()-450)
+  // $('.qut').css("margin-top", $(window).height()-450)
   userName = window.location.href.split("name=")[1];
   var urlName = userName
   var showName = userName.replace("-"," ")
