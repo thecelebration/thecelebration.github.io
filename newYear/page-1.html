@@ -152,9 +152,9 @@
         <div>
           <div>
             <div>
-              <input type="text" id="userName" placeholder="name" required="true">
+              <input type="text" id="userNameTop" placeholder="name" required="true">
               <div>
-                <button id="nameSubmit">Submit</button>
+                <button id="nameSubmitTop">Submit</button>
                 <button class="popup-close">Close</button>
               </div>
             </div>
@@ -182,7 +182,7 @@ $(window).load(function() {
 });
 
 $(document).on("click","#nameSubmit",function(){
-  var newUserName = $("#userName").val().replace(" ","-")
+  var newUserName = $("#userNameTop").val().replace(" ","-")
   window.location.href = "page-1.html?name="+newUserName+""
 })
 
