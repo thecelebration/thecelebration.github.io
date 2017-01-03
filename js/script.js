@@ -37,31 +37,31 @@
 // $(window).resize(function(){
 //   equalheight('.page-body');
 // });
-var userName
-$(window).load(function() {
-  $('#page-body').css("height", $(window).height()-115)
-  $('.bg').css("height", $(window).height()-115)
-  $('.qut').css("margin-top", $(window).height()-450)
-  userName = window.location.href.split("name=")[1];
-  var urlName = userName
-  var showName = userName.replace("-"," ")
-  $(".user-name span").text(showName) 
-  $(".share a").attr("href","whatsapp://send?text=https://thecelebration.github.io/newYear/page-1.html?name="+urlName+"")
-});
+// var userName
+// $(window).load(function() {
+//   $('#page-body').css("height", $(window).height()-115)
+//   $('.bg').css("height", $(window).height()-115)
+//   $('.qut').css("margin-top", $(window).height()-450)
+//   userName = window.location.href.split("name=")[1];
+//   var urlName = userName
+//   var showName = userName.replace("-"," ")
+//   $(".user-name span").text(showName) 
+//   $(".share a").attr("href","whatsapp://send?text=https://thecelebration.github.io/newYear/page-1.html?name="+urlName+"")
+// });
 
-$(document).on("click","#nameSubmit",function(){
-  var newUserName = $("#userName").val().replace(" ","-")
-  window.location.href = "page-1.html?name="+newUserName+""
-})
-$(document).on("click","#nameSubmitTop",function(){
-  var newUserName = $("#userNameTop").val().replace(" ","-")
-  window.location.href = "page-1.html?name="+newUserName+""
-})
+// $(document).on("click","#nameSubmit",function(){
+//   var newUserName = $("#userName").val().replace(" ","-")
+//   window.location.href = "page-1.html?name="+newUserName+""
+// })
+// $(document).on("click","#nameSubmitTop",function(){
+//   var newUserName = $("#userNameTop").val().replace(" ","-")
+//   window.location.href = "page-1.html?name="+newUserName+""
+// })
 
-$(document).on("click","#nameSubmitBottom",function(){
-  var newUserName = $("#userNameBottom").val().replace(" ","-")
-  window.location.href = "page-1.html?name="+newUserName+""
-})
+// $(document).on("click","#nameSubmitBottom",function(){
+//   var newUserName = $("#userNameBottom").val().replace(" ","-")
+//   window.location.href = "page-1.html?name="+newUserName+""
+// })
 
 // popup js
 jQuery(document).ready(function($){

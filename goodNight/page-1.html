@@ -23,7 +23,7 @@
     var js, fjs = d.getElementsByTagName(s)[0];
     if (d.getElementById(id)) return;
     js = d.createElement(s); js.id = id;
-    js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1";
+    js.src = "//connect.facebook.net/en_US/all.js#xfbml=1";
     fjs.parentNode.insertBefore(js, fjs);
   }(document, 'script', 'facebook-jssdk'));</script>
   <script>
@@ -172,7 +172,7 @@
     <div class="share">
       <a href="whatsapp://send?text=https://thecelebration.github.io/goodNight/page-1.html?name=your-name" data-action="share/whatsapp/share" ><img src="../images/whatsapp.png"> Share on What's app</a>
     </div>
-    <div class="fb-share-button" data-layout="button_count" data-size="small" data-mobile-iframe="true"><a class="fb-xfbml-parse-ignore" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fthecelebration.github.io%2FgoodNight%2Fpage-1.html%3Fname%3Dkrantiqqq&amp;src=sdkpreparse"><img src="../images/facebook.png"> Share on Facebook</a></div>
+    <div class="fb-share-button fb-share" data-layout="button_count" data-size="small" data-mobile-iframe="true"><a class="" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fthecelebration.github.io%2FgoodNight%2Fpage-1.html%3Fname%3Dyour-name&amp;src=sdkpreparse"><img src="../images/facebook.png"> Share on Facebook</a></div>
     <!-- <div class="right"> > </div> -->
   </div>
 </div>
@@ -208,9 +208,12 @@ $(window).load(function() {
   userName = window.location.href.split("name=")[1];
   var urlName = userName
   var showName = userName.replace("-"," ")
-  $(".user-name span").text(showName) 
-  $(".share a").attr("href","whatsapp://send?text=https://thecelebration.github.io/newYear/page-1.html?name="+urlName+"")
-  $(".fb-share-button a").attr("href","https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fthecelebration.github.io%2FnewYear%2Fpage-1.html%3Fname%3D"+urlName+"&amp;src=sdkpreparse")
+  $(".user-name span").text(showName)
+  setTimeout(function(){
+
+    $(".share a").attr("href","whatsapp://send?text=https://thecelebration.github.io/goodNight/page-1.html?name="+urlName+"")
+    $(".fb-share a").attr("href","https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fthecelebration.github.io%2FgoodNight%2Fpage-1.html%3Fname%3D"+urlName+"&amp;src=sdkpreparse")
+  },600)
 });
 
 $(document).on("click","#nameSubmit",function(){
