@@ -1,17 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Happy New Year</title>
+  <title>Good Morning</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta property="og:site_name" content="The Celebration">
-  <meta property="og:title" content="Happy New Year" />
-  <meta property="og:description" content="Your friend is wishing you Happy New Year, Click Here" />
-  <meta property="og:image" itemprop="image" content="http://www.publicdomainpictures.net/pictures/70000/nahled/happy-new-year-fireworks.jpg">
+  <meta property="og:title" content="Good Morning" />
+  <meta property="og:description" content="Your friend is wishing you Good Morning, Click Here" />
+  <meta property="og:image" itemprop="image" content="images/fb-3.png">
   <meta property="og:type" content="website" />
   <meta property="og:updated_time" content="1440432930" />
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <link rel="stylesheet" type="text/css" href="../css/style.css">
+  <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet"> 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
   <script src="../js/script.js"></script>
   <script src="../js/animation.js"></script>
@@ -35,7 +36,40 @@
   </script>
 </head>
 <body>
-
+<style type="text/css">
+.col-1 {
+    color: #fff;
+    text-align: center;
+    font-size: 30px;
+    text-transform: capitalize;
+    padding-top: 60px;
+    font-family: 'Lobster', cursive;
+}
+.col-2 {
+    color: #fff;
+    text-align: center;
+    font-size: 22px;
+    text-transform: capitalize;
+    font-family: 'Lobster', cursive;
+}
+.col-3 {
+    color: #fff;
+    text-align: center;
+    font-size: 38px;
+    text-transform: capitalize;
+    font-family: 'Lobster', cursive;
+}
+.qut-bg p {
+    color: #fff;
+    font-size: 16px;
+    line-height: 20px;
+    text-shadow: 0 1px 3px #000;
+    padding: 5PX 15PX;
+}
+.page-body2{
+  background-image: url("../images/bg-3.jpg");
+}
+</style>
 <div class="container-mob">
   <div class="page-top-bar create-tab">
     <p>Create Your Own whish Like This <img src="../images/menu.png"></p>
@@ -55,15 +89,16 @@
     </div>
   </div>
   <div class="col-sm-8">
-    <div class="page-body" id="page-body">
+    <div class="page-body2" id="page-body">
       <div class="bg"></div>
-      <p class="user-name text-1"><span></span></p>
-      <p class="text-2">Wishing You</p>
-      <p class="text-3">Happy New Year</p>
-      <p class="text-4">2017</p>
-      <div class="qut">
+      <p class="col-1 user-name"><span></span></p>
+      <p class="col-2">Says</p>
+      <p class="col-3">Good Morning</p>
+      <p class="col-3">&</p>
+      <p class="col-3">Sweet Dreams</p>
+      <div class="qut-bg" style="margin-top: 100px">
         <p>
-          Here is a wishing that the coming year is a glorious one. That rewards all your future endeavors with success.
+          Never let the <strong>Darkness</strong> or negativity outside affect your <strong>Inner Self</strong>. Just wait until <strong>Morning</strong> comes and the bright light will drown out the <strong>Darkness</strong>. Today has been difficult, but tommorow will be <strong>Another Day</strong>.
         </p>
         <span class="pull-right user-name">- <span></span></span>
       </div>
@@ -136,11 +171,11 @@
   </div>
   </div>
   <div class="pagefooter-mob">
-    <!-- <div class="left"> < </div>
+    <!-- <div class="left"> < </div> -->
     <div class="share">
-      <a href="whatsapp://send?text=https://thecelebration.github.io/newYear/page-1.html?name=Kranti" data-action="share/whatsapp/share" ><img src="../images/whatsapp.png"> Share on What's app</a>
+      <a href="whatsapp://send?text=https://thecelebration.github.io/goodMorning/page-1.html?name=your-name" data-action="share/whatsapp/share" ><img src="../images/whatsapp.png"> Share on What's app</a>
     </div>
-    <div class="fb-share-button" data-layout="button_count" data-size="small" data-mobile-iframe="true"><a class="fb-xfbml-parse-ignore" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fthecelebration.github.io%2FnewYear%2Fpage-1.html%3Fname%3Dkrantiqqq&amp;src=sdkpreparse"><img src="../images/facebook.png"> Share on Facebook</a></div>
+    <div class="fb-share-button fb-share" data-layout="button_count" data-size="small" data-mobile-iframe="true"><a class="" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fthecelebration.github.io%2FgoodMorning%2Fpage-1.html%3Fname%3Dyour-name&amp;src=sdkpreparse"><img src="../images/facebook.png"> Share on Facebook</a></div>
     <!-- <div class="right"> > </div> -->
   </div>
 </div>
@@ -170,15 +205,18 @@
 <script type="text/javascript">
   var userName
 $(window).load(function() {
-  $('.page-body').css("height", $(window).height()-115)
+  // $('page-body2').css("height", $(window).height()-115)
   $('.bg').css("height", $(window).height()-115)
-  $('.qut').css("margin-top", $(window).height()-450)
+  // $('.qut').css("margin-top", $(window).height()-450)
   userName = window.location.href.split("name=")[1];
   var urlName = userName
   var showName = userName.replace("-"," ")
-  $(".user-name span").text(showName) 
-  $(".share a").attr("href","whatsapp://send?text=https://thecelebration.github.io/newYear/page-1.html?name="+urlName+"")
-  $(".fb-share-button a").attr("href","https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fthecelebration.github.io%2FnewYear%2Fpage-1.html%3Fname%3D"+urlName+"&amp;src=sdkpreparse")
+  $(".user-name span").text(showName)
+  setTimeout(function(){
+
+    $(".share a").attr("href","whatsapp://send?text=https://thecelebration.github.io/goodMorning/page-1.html?name="+urlName+"")
+    $(".fb-share a").attr("href","https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fthecelebration.github.io%2FgoodMorning%2Fpage-1.html%3Fname%3D"+urlName+"&amp;src=sdkpreparse")
+  },600)
 });
 
 $(document).on("click","#nameSubmit",function(){
@@ -190,4 +228,4 @@ $(document).on("click","#nameSubmitBottom",function(){
   var newUserName = $("#userNameBottom").val().replace(" ","-")
   window.location.href = "page-1.html?name="+newUserName+""
 })
-</script> -->
+</script>
