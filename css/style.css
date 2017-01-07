@@ -99,6 +99,7 @@ body{
 }
 .page-ads{
   max-height: 150px;
+  overflow: hidden;
   padding: 10px;
 }
 .text-1{
