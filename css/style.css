@@ -433,8 +433,8 @@ a:hover{
 }
 @media only screen and (max-width: 319px){
   .page-top-bar p {
-    font-size: 13px;
-    min-width: 205px;
+    font-size: 21px !important;
+    min-width: 180px;
     padding: 10px 2px;
     width: 66%;
   }
