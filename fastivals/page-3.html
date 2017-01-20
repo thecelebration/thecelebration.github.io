@@ -78,7 +78,7 @@
     padding: 5PX 15PX;
 }
 audio { 
-   display:none;
+   /*display:none;*/
 } 
 </style>
 <div class="container-mob">
@@ -117,7 +117,7 @@ audio {
           <p class="col-2">Wishing You</p>
           <p class="col-3">Happy Republic Day</p>
         </div>
-        <audio controls autoplay>
+        <audio id="music" controls>
           <source src="../music/IndianNationalAntemin52seconds.ogg" type="audio/ogg">
           <source src="../music/IndianNationalAntemin52seconds.mp3" type="audio/mpeg">
         Your browser does not support the audio element.
@@ -250,4 +250,6 @@ $(document).on("click","#nameSubmitBottom",function(){
   var newUserName = $("#userNameBottom").val().replace(" ","-")
   window.location.href = "page-3.html?name="+newUserName+""
 })
+var audio = document.getElementById('music');
+audio.play();
 </script>
