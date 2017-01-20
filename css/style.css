@@ -115,8 +115,10 @@ a:hover{
 .pull-right{
   float: right;
 }
-.page-ads{
+.maxh{
   max-height: 150px;
+}
+.page-ads{
   overflow: hidden;
   padding: 10px;
 }
