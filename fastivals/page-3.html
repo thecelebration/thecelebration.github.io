@@ -77,7 +77,9 @@
     text-shadow: 0 1px 3px #000;
     padding: 5PX 15PX;
 }
-
+audio { 
+   display:none;
+} 
 </style>
 <div class="container-mob">
   <div class="page-top-bar">
@@ -110,13 +112,14 @@
       <!-- <p class="col-3">Happy Republic Day</p> -->
       <div style="min-height:350px;"></div>
       <div class="qut-bg" style="margin-top: 100px">
-        <p>
+        <div>
           <p class="col-1 user-name"><span></span></p>
           <p class="col-2">Wishing You</p>
           <p class="col-3">Happy Republic Day</p>
-        </p>
+        </div>
         <audio controls autoplay>
-          <source src="https://api.backendless.com/F30BB9DC-AFE5-2F35-FF4C-39EFA40E7100/v1/files/Indian+National+Antem+in+52+Seconds.mp3" type="audio/mpeg">
+          <source src="../music/IndianNationalAntemin52seconds.ogg" type="audio/ogg">
+          <source src="../music/IndianNationalAntemin52seconds.mp3" type="audio/mpeg">
         Your browser does not support the audio element.
         </audio>
         <!-- <span class="pull-right user-name">- <span></span></span> -->
