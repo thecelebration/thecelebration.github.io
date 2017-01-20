@@ -118,8 +118,8 @@ audio {
           <p class="col-3">Happy Republic Day</p>
         </div>
         <audio id="music" controls>
-          <source src="../music/IndianNationalAntemin52seconds.ogg" type="audio/ogg">
-          <source src="../music/IndianNationalAntemin52seconds.mp3" type="audio/mpeg">
+          <!-- <source src="../music/IndianNationalAntemin52seconds.ogg" type="audio/ogg"> -->
+          <!-- <source src="../music/IndianNationalAntemin52seconds.mp3" type="audio/mpeg"> -->
         Your browser does not support the audio element.
         </audio>
         <!-- <span class="pull-right user-name">- <span></span></span> -->
@@ -252,6 +252,7 @@ $(document).on("click","#nameSubmitBottom",function(){
 })
 setTimeout(function(){
   var audio = document.getElementById('music');
+  audio.src = '../music/IndianNationalAntemin52seconds.mp3';
   audio.play();
 },500)
 </script>
