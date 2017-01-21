@@ -15,7 +15,7 @@
   <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">  
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
   <script src="../js/script.js"></script>
-  <!-- <script src="../js/animation.js"></script> -->
+  <script src="../js/jquery.jplayer.min.js"></script>
    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
   <div id="fb-root"></div>
@@ -107,6 +107,27 @@ audio {
   <div class="col-sm-8">
     <div class="page-body2">
       <div class="bg"></div>
+      <!-- player start -->
+      <script type="text/javascript">
+       $(document).ready(function(){
+        $("#jquery_jplayer_1").jPlayer({
+         ready: function () {
+          $(this).jPlayer("setMedia", {
+           m4a: "../music/IndianNationalAntemin52seconds.mp3",
+           oga: "../music/IndianNationalAntemin52seconds.ogg"
+          });
+         },
+         swfPath: "/js",
+         supplied: "m4a, oga"
+        });
+       });
+      </script>
+      <div id="jquery_jplayer_1"></div>
+      <div id="jp_container_1">
+       <a href="#" class="jp-play"><img src="../images/play.ico"></a>
+       <a href="#" class="jp-pause"><img src="../images/pause.ico"></a>
+      </div>
+      <!-- player end -->
       <!-- <p class="col-1 user-name"><span></span></p> -->
       <!-- <p class="col-2">Wishing You</p> -->
       <!-- <p class="col-3">Happy Republic Day</p> -->
@@ -117,16 +138,6 @@ audio {
           <p class="col-2">Wishing You</p>
           <p class="col-3">Happy Republic Day</p>
         </div>
-        <!-- <audio controls id="music">
-          <source src="../music/IndianNationalAntemin52seconds.ogg" type="audio/ogg">
-          <source src="../music/IndianNationalAntemin52seconds.mp3" type="audio/mpeg">
-        Your browser does not support the audio element.
-        </audio> -->
-        <video src="../music/IndianNationalAntemin52seconds.mp3" autoplay poster="posterimage.jpg">
-Sorry, your browser doesn't support embedded videos, 
-but don't worry, you can <a href="videofile.webm">download it</a>
-and watch it with your favorite video player!
-</video>
         <!-- <span class="pull-right user-name">- <span></span></span> -->
       </div>
     </div>
@@ -255,9 +266,7 @@ $(document).on("click","#nameSubmitBottom",function(){
   var newUserName = $("#userNameBottom").val().replace(" ","-")
   window.location.href = "page-3.html?name="+newUserName+""
 })
-setTimeout(function(){
-  var audio = document.getElementById('music');
-  audio.src = '../music/IndianNationalAntemin52seconds.mp3';
-  audio.play();
-},200)
+$(window).on("load",function(){
+  $(".jp-play").click()
+})
 </script>

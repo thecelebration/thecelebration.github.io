@@ -446,4 +446,10 @@ a:hover{
     padding: 6px 2px;
   }
 }
-
+#jp_container_1 a{
+  float: right;
+  margin: 10px;
+}
+#jp_container_1 a img{
+  max-width: 40px;
+}
