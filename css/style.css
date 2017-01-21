@@ -449,6 +449,16 @@ a:hover{
 #jp_container_1 a{
   float: right;
   margin: 10px;
+  text-align: center;
+  width: 50px;
+}
+#jp_container_1 a i{
+  border: 2px solid #fff;
+  border-radius: 100%;
+  color: #fff;
+  font-size: 20px;
+  padding: 5px 6px 4px 9px;
+  text-align: center;
 }
 #jp_container_1 a img{
   max-width: 40px;
