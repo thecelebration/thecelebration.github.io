@@ -11,6 +11,25 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   <script src="js/script.js"></script>
   <script type="text/javascript"> var infolinks_pid = 2942412; var infolinks_wsid = 0; </script> <script type="text/javascript" src="//resources.infolinks.com/js/infolinks_main.js"></script>
+
+  <script src="https://cdn.onesignal.com/sdks/OneSignalSDK.js" async='async'></script>
+  <script>
+    var OneSignal = window.OneSignal || [];
+    OneSignal.push(["init", {
+      appId: "729fc99d-1911-4559-bea4-1720b40e975a",
+      autoRegister: true, /* Set to true to automatically prompt visitors */
+      subdomainName: 'SUBDOMAIN_NAME_SEE_STEP_1.4',
+      /*
+      subdomainName: Use the value you entered in step 1.4: http://imgur.com/a/f6hqN
+      */
+      httpPermissionRequest: {
+        enable: true
+      },
+      notifyButton: {
+          enable: true /* Set to false to hide */
+      }
+    }]);
+  </script>
 </head>
   <body>
     <div class="page-top-bar create-tab" style="height: 55px">
